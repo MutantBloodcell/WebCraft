@@ -9,7 +9,7 @@ public class EaglercraftVersion {
 	
 	/// Customize these to fit your fork:
 	
-	public static final String projectForkName = "WebCraftX";
+	public static final String projectForkName = "WebCraft";
 	public static final String projectForkVersion = "u53";
 	public static final String projectForkVendor = "MutantBloodcell";
 	
@@ -17,7 +17,7 @@ public class EaglercraftVersion {
 	
 	//////////////////////////////////////////////////////////////////////
 	
-	public static final String projectOriginName = "WebCraftX";
+	public static final String projectOriginName = "WebCraft";
 	public static final String projectOriginAuthor = "MutantBloodcell";
 	public static final String projectOriginRevision = "1.8";
 	public static final String projectOriginVersion = "u53";
