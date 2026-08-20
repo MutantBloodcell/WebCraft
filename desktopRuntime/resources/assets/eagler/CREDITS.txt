@@ -1,10 +1,10 @@
 
- EaglercraftX Developers
+ WebCraft Developers
  ~~~~~~~~~~~~~~~~~~~~~~~
 
- lax1dude:
+ Mutant Bloodcell:
 
-  - Creator of Eaglercraft
+  - Creator of WebCraft
   - Ported the Minecraft 1.8 src to TeaVM
   - Optimized the Minecraft 1.8 src
   - Made the platform abstraction layer
@@ -15,28 +15,6 @@
   - Made the multiplayer backends
   - Made the shared world relay server
   - Made the patch and build system
-
- ayunami2000:
-
-  - Many bug fixes
-  - WebRTC shared worlds
-  - WebRTC voice chat
-  - Worked on touch support
-  - Made velocity plugin work
-  - Added resource packs
-  - Added screen recording
-  - Added seamless fullscreen
-  - Created the replit
-
- cire3:
-
-  - Created the Gradle plugin
-  - Proponent of Kotlin DSL
-
-
-
- Code used within EaglercraftX
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
