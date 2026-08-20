@@ -9,16 +9,16 @@ public class EaglercraftVersion {
 	
 	/// Customize these to fit your fork:
 	
-	public static final String projectForkName = "EaglercraftX";
+	public static final String projectForkName = "WebCraftX";
 	public static final String projectForkVersion = "u53";
-	public static final String projectForkVendor = "lax1dude";
+	public static final String projectForkVendor = "MutantBloodcell";
 	
 	public static final String projectForkURL = "https://gitlab.com/lax1dude/eaglercraftx-1.8";
 	
 	//////////////////////////////////////////////////////////////////////
 	
-	public static final String projectOriginName = "EaglercraftX";
-	public static final String projectOriginAuthor = "lax1dude";
+	public static final String projectOriginName = "WebCraftX";
+	public static final String projectOriginAuthor = "MutantBloodcell";
 	public static final String projectOriginRevision = "1.8";
 	public static final String projectOriginVersion = "u53";
 	
@@ -26,7 +26,7 @@ public class EaglercraftVersion {
 	
 	// EPK Version Identifier
 	
-	public static final String EPKVersionIdentifier = "u53"; // Set to null to disable EPK version check
+	public static final String EPKVersionIdentifier = "null"; // Set to null to disable EPK version check
 	
 	// Updating configuration
 	
@@ -66,12 +66,12 @@ public class EaglercraftVersion {
 	public static final String screenRecordingFilePrefix = projectOriginName + " "
 			+ projectOriginRevision + "-" + projectOriginVersion;
 
-	public static final long demoWorldSeed = (long) "North Carolina".hashCode();
+	public static final long demoWorldSeed = (long) "Antarctica".hashCode();
 
 	public static final boolean mainMenuEnableGithubButton = false;
 
 	public static final boolean forceDemoMode = false;
 
-	public static final String localStorageNamespace = "_eaglercraftX";
+	public static final String localStorageNamespace = "_webcraftX";
 
 }
