@@ -2,33 +2,33 @@
 	"joinServer": null,
 	"servers": [
 		{
-			"serverName": "Local Test Server",
-			"serverAddress": "localhost:25565",
+			"serverName": "ArchMC",
+			"serverAddress": "wss://arch.mc",
 			"hideAddress": false
 		}
 	],
 	"relays": [
 		{
 			"addr": "wss://relay.deev.is/",
-			"name": "lax1dude relay #1",
+			"name": "mutant relay #1",
 			"primary": "$random_relay_primary_0"
 		},
 		{
 			"addr": "wss://relay.lax1dude.net/",
-			"name": "lax1dude relay #2",
+			"name": "mutant relay #2",
 			"primary": "$random_relay_primary_1"
 		},
 		{
 			"addr": "wss://relay.shhnowisnottheti.me/",
-			"name": "ayunami relay #1",
+			"name": "web relay #1",
 			"primary": "$random_relay_primary_2"
 		}
 	],
 	"mainMenu": {
 		"splashes": [
 			"Darviglet!",
-			"eaglerenophile!",
-			"You Eagler!",
+			"webenophile!",
+			"You Web!",
 			"Yeeeeeee!",
 			"yeee",
 			"EEEEEEEEE!",
