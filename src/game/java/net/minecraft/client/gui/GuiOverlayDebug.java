@@ -440,17 +440,21 @@ public class GuiOverlayDebug extends Gui {
 					HString.format("Allocated: % 2d%% %03dMB",
 							new Object[] { Long.valueOf(j * 100L / i), Long.valueOf(bytesToMb(j)) }),
 					"", "CPU: webcraft", "",
-					HString.format("Display: %dx%d (%s)",
-							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
-									EaglercraftGPU.glGetString(7936) }),
-					    "GPU: WebCraft Render Engine", "WebGL 2.0" });
+					    HString.format("Display: %dx%d (%s)",
+        new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
+            EaglercraftGPU.glGetString(7936) }),
+    "GPU: WebCraft Render Engine", 
+    "WebGL 2.0" 
+});
 		} else {
 			arraylist = Lists.newArrayList(new String[] { "Platform: " + EagRuntime.getPlatformType().getName(),
 					"Java: TeaVM", "", "CPU: webcraft", "",
-					HString.format("Display: %dx%d (%s)",
-							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
-									EaglercraftGPU.glGetString(7936) }),
-					    "GPU: WebCraft Render Engine", "WebGL 2.0" });
+					    HString.format("Display: %dx%d (%s)",
+        new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
+            EaglercraftGPU.glGetString(7936) }),
+    "GPU: WebCraft Render Engine", 
+    "WebGL 2.0" 
+});
 		}
 		if (this.isReducedDebug()) {
 			return arraylist;
