@@ -33,6 +33,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: target_teavm_wasm_gc/build/javascript_dist
+          folder: target_teavm_wasm_gc/javascript
           branch: 
           
