@@ -27,12 +27,12 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
 
 /**+
- * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
+ * This portion of WebCraft contains deobfuscated Minecraft 1.8 source code.
  * 
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * WebCraft 1.8 patch files (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -432,7 +432,7 @@ public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback {
 		if (parInt1 > width - 5 - (w + 5) * 3 / 4 && parInt2 > 1 && parInt1 < width - 2 && parInt2 < 12) {
 			this.mc.getSoundHandler()
 					.playSound(PositionedSoundRecord.create(new ResourceLocation("gui.button.press"), 1.0F));
-			EagRuntime.openLink("https://lax1dude.net/eaglerxserver");
+			EagRuntime.openLink("https://github.com/MutantBloodcell/eaglerxserver");
 		}
 	}
 
