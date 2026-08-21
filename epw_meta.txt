@@ -1,0 +1,8 @@
+client-version-integer=52
+client-package-name=net.lax1dude.eaglercraft.v1_8.client
+client-origin-name=WebCraft
+client-origin-version=u52
+client-origin-vendor=MutantBloodcell
+client-fork-name=WebCraft
+client-fork-version=u52
+client-fork-vendor=MutantBloodcell
