@@ -141,7 +141,7 @@ public class IntegratedTextureService {
 		String fileName = "eagler://" + skullHandler.installNewSkull(skullData);
 		NBTTagCompound rootTagCompound = new NBTTagCompound();
 		NBTTagCompound ownerTagCompound = new NBTTagCompound();
-		ownerTagCompound.setString("Name", "Eagler");
+		ownerTagCompound.setString("Name", "Web");
 		ownerTagCompound.setString("Id", EaglercraftUUID.nameUUIDFromBytes((("EaglerSkullUUID:" + fileName).getBytes(StandardCharsets.UTF_8))).toString());
 		NBTTagCompound propertiesTagCompound = new NBTTagCompound();
 		NBTTagList texturesTagList = new NBTTagList();
@@ -153,7 +153,7 @@ public class IntegratedTextureService {
 		ownerTagCompound.setTag("Properties", propertiesTagCompound);
 		rootTagCompound.setTag("SkullOwner", ownerTagCompound);
 		NBTTagCompound displayTagCompound = new NBTTagCompound();
-		displayTagCompound.setString("Name", EnumChatFormatting.RESET + "Custom Eaglercraft Skull");
+		displayTagCompound.setString("Name", EnumChatFormatting.RESET + "Custom WebCraft Skull");
 		NBTTagList loreList = new NBTTagList();
 		loreList.appendTag(new NBTTagString(EnumChatFormatting.GRAY + (fileName.length() > 24 ? (fileName.substring(0, 22) + "...") : fileName)));
 		displayTagCompound.setTag("Lore", loreList);
