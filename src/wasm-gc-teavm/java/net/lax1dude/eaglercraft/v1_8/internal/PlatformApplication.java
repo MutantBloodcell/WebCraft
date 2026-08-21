@@ -255,7 +255,7 @@ public class PlatformApplication {
 
 		newWin.focus();
 		documentWrite(newWin.getDocument(), "<!DOCTYPE html><html><head><meta charset=\"UTF-8\" />"
-				+ "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>EaglercraftX 1.8 Credits</title>"
+				+ "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>WebCraft Credits</title>"
 				+ "<link type=\"image/png\" rel=\"shortcut icon\" href=\""
 				+ BetterJSStringConverter.stringFromJS(PlatformApplication.faviconURLTeaVM()) + "\" />"
 				+ "</head><body><pre style=\"font:15px Consolas,monospace;\">" + text + "</pre></body></html>");

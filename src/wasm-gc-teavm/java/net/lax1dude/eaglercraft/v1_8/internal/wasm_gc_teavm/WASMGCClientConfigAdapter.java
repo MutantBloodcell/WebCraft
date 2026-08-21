@@ -57,7 +57,7 @@ public class WASMGCClientConfigAdapter implements IClientConfigAdapter {
 	private boolean enableSignatureBadge = false;
 	private boolean allowVoiceClient = true;
 	private boolean allowFNAWSkins = true;
-	private String localStorageNamespace = "_eaglercraftX";
+	private String localStorageNamespace = "_webcraftX";
 	private final WASMGCClientConfigAdapterHooks hooks = new WASMGCClientConfigAdapterHooks();
 	private boolean enableMinceraft = true;
 	private boolean enableServerCookies = true;
