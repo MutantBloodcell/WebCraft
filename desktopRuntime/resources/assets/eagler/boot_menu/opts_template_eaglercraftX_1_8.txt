@@ -41,7 +41,7 @@
 	"allowVoiceClient": true,
 	"worldsDB": "worlds",
 	"demoMode": false,
-	"localStorageNamespace": "_eaglercraftX",
+	"localStorageNamespace": "_webcraftX",
 	"enableSignatureBadge": false,
 	"lang": "en_US",
 	"enableMinceraft": true,
