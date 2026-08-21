@@ -44,12 +44,12 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.Chunk;
 
 /**+
- * This portion of WebCraft contains deobfuscated Minecraft 1.8 source code.
+ * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
  * 
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * WebCraft 1.8 patch files (c) 2026 Mutant Bloodcell. All Rights Reserved.
+ * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -439,22 +439,18 @@ public class GuiOverlayDebug extends Gui {
 									Long.valueOf(bytesToMb(i)) }),
 					HString.format("Allocated: % 2d%% %03dMB",
 							new Object[] { Long.valueOf(j * 100L / i), Long.valueOf(bytesToMb(j)) }),
-					"", "CPU: webcraft", "",
-					    HString.format("Display: %dx%d (%s)",
-        new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
-            EaglercraftGPU.glGetString(7936) }),
-    "GPU: WebCraft Render Engine", 
-    "WebGL 2.0" 
-});
+					"", HString.format("CPU: %s", new Object[] { "webcraft" }), "",
+					HString.format("Display: %dx%d (%s)",
+							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
+									EaglercraftGPU.glGetString(7936) }),
+					EaglercraftGPU.glGetString(7937), EaglercraftGPU.glGetString(7938) });
 		} else {
 			arraylist = Lists.newArrayList(new String[] { "Platform: " + EagRuntime.getPlatformType().getName(),
-					"Java: TeaVM", "", "CPU: webcraft", "",
-					    HString.format("Display: %dx%d (%s)",
-        new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
-            EaglercraftGPU.glGetString(7936) }),
-    "GPU: WebCraft Render Engine", 
-    "WebGL 2.0" 
-});
+					"Java: TeaVM", "", HString.format("CPU: %s", new Object[] { "webcraft" }), "",
+					HString.format("Display: %dx%d (%s)",
+							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
+									EaglercraftGPU.glGetString(7936) }),
+					EaglercraftGPU.glGetString(7937), EaglercraftGPU.glGetString(7938) });
 		}
 		if (this.isReducedDebug()) {
 			return arraylist;
