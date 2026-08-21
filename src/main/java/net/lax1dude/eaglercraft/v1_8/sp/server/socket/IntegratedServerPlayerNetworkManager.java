@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -116,7 +116,7 @@ public class IntegratedServerPlayerNetworkManager {
 							DataOutputStream kickDAO = new DataOutputStream(kickPacketBAO);
 							kickDAO.write(0);
 							kickDAO.write(0xFF);
-							String msg = "This is an EaglercraftX 1.8 LAN world!";
+							String msg = "This is an WebCraft LAN world!";
 							kickDAO.write(0x00);
 							kickDAO.write(msg.length());
 							for(int j = 0, l = msg.length(); j < l; ++j) {
@@ -126,7 +126,7 @@ public class IntegratedServerPlayerNetworkManager {
 							throw new RuntimeException(ex);
 						}
 						ServerPlatformSingleplayer.sendPacket(new IPCPacketData(playerChannel, kickPacketBAO.toByteArray()));
-						closeChannel(new ChatComponentText("Recieved unsuppoorted connection from an Eaglercraft 1.5.2 client!"));
+						closeChannel(new ChatComponentText("Recieved unsuppoorted connection from an WebCraft 1.5.2 client!"));
 						firstPacket = false;
 						return;
 					}
