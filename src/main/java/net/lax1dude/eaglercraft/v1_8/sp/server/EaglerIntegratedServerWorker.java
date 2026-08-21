@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -483,7 +483,7 @@ public class EaglerIntegratedServerWorker {
 	public static void serverMain() {
 		try {
 			currentProcess = null;
-			logger.info("Starting EaglercraftX integrated server worker...");
+			logger.info("Starting WebCraft integrated server worker...");
 			
 			if(ServerPlatformSingleplayer.getWorldsDatabase().isRamdisk()) {
 				sendIPCPacket(new IPCPacket1CIssueDetected(IPCPacket1CIssueDetected.ISSUE_RAMDISK_MODE));
@@ -523,7 +523,7 @@ public class EaglerIntegratedServerWorker {
 	}
 
 	public static void singleThreadMain() {
-		logger.info("Starting EaglercraftX integrated server worker...");
+		logger.info("Starting WebCraft integrated server worker...");
 		if(ServerPlatformSingleplayer.getWorldsDatabase().isRamdisk()) {
 			sendIPCPacket(new IPCPacket1CIssueDetected(IPCPacket1CIssueDetected.ISSUE_RAMDISK_MODE));
 		}
