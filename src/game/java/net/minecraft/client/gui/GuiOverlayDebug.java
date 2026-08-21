@@ -439,14 +439,14 @@ public class GuiOverlayDebug extends Gui {
 									Long.valueOf(bytesToMb(i)) }),
 					HString.format("Allocated: % 2d%% %03dMB",
 							new Object[] { Long.valueOf(j * 100L / i), Long.valueOf(bytesToMb(j)) }),
-					"", "CPU: %s", new Object[] { "webcraft" }), "",
+					"", HString.format("CPU: %s", new Object[] { "webcraft" }), "",
 					HString.format("Display: %dx%d (%s)",
 							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
 									EaglercraftGPU.glGetString(7936) }),
 					EaglercraftGPU.glGetString(7937), EaglercraftGPU.glGetString(7938) });
 		} else {
 			arraylist = Lists.newArrayList(new String[] { "Platform: " + EagRuntime.getPlatformType().getName(),
-					"Java: TeaVM", "", "CPU: %s", new Object[] { "webcraft" }), "",
+					"Java: TeaVM", "", HString.format("CPU: %s", new Object[] { "webcraft" }), "",
 					HString.format("Display: %dx%d (%s)",
 							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
 									EaglercraftGPU.glGetString(7936) }),
