@@ -1,8 +1,8 @@
 [NBT]{
 	servers: [
 		{
-			name: "Local Test Server",
-			ip: "localhost:25565",
+			name: "ArcgMC",
+			ip: "wss://arch.mc",
 			hideAddress: false
 		}
 	],
@@ -13,8 +13,8 @@
 		itemLine2: "",
 		splashes: [
 			"Darviglet!",
-			"eaglerenophile!",
-			"You Eagler!",
+			"webenophile!",
+			"You Web!",
 			"Yeeeeeee!",
 			"yeee",
 			"EEEEEEEEE!",
