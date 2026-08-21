@@ -2,26 +2,26 @@
 	"joinServer": null,
 	"servers": [
 		{
-			"addr": "ws://localhost:8081/",
+			"addr": "wss://arch.mc",
 			"hideAddr": false,
-			"name": "Local test server"
+			"name": "ArchMC"
 		}
 	],
 	"relays": [
 		{
 			"addr": "wss://relay.deev.is/",
 			"primary": "$random_relay_primary_0",
-			"comment": "lax1dude relay #1"
+			"comment": "mutant relay #1"
 		},
 		{
 			"addr": "wss://relay.lax1dude.net/",
 			"primary": "$random_relay_primary_1",
-			"comment": "lax1dude relay #2"
+			"comment": "mutant relay #2"
 		},
 		{
 			"addr": "wss://relay.shhnowisnottheti.me/",
 			"primary": "$random_relay_primary_2",
-			"comment": "ayunami relay #1"
+			"comment": "web relay #1"
 		}
 	],
 	"openDebugConsoleOnLaunch": false,
