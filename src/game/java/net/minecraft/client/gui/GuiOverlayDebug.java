@@ -423,37 +423,58 @@ public class GuiOverlayDebug extends Gui {
 		}
 	}
 
-	protected List<String> getDebugInfoRight() {
+		protected List<String> getDebugInfoRight() {
 		ArrayList arraylist;
 		if (EagRuntime.getPlatformType() == EnumPlatformType.DESKTOP) {
 			long i = EagRuntime.maxMemory();
 			long j = EagRuntime.totalMemory();
 			long k = EagRuntime.freeMemory();
 			long l = j - k;
-			arraylist = Lists.newArrayList(new String[] { "Platform: Desktop",
-					HString.format("Java: %s %dbit",
-							new Object[] { System.getProperty("java.version"),
-									Integer.valueOf(this.mc.isJava64bit() ? 64 : 32) }),
-					HString.format("Mem: % 2d%% %03d/%03dMB",
-							new Object[] { Long.valueOf(l * 100L / i), Long.valueOf(bytesToMb(l)),
-									Long.valueOf(bytesToMb(i)) }),
-					HString.format("Allocated: % 2d%% %03dMB",
-							new Object[] { Long.valueOf(j * 100L / i), Long.valueOf(bytesToMb(j)) }),
-					"", HString.format("CPU: %s", new Object[] { "webcraft" }), "",
-					HString.format("Display: %dx%d (%s)",
-							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
-									EaglercraftGPU.glGetString(7936) }),
-					EaglercraftGPU.glGetString(7937), EaglercraftGPU.glGetString(7938) });
+			arraylist = Lists.newArrayList(new String[] { 
+					"Platform: Desktop",
+					HString.format("Java: %s %dbit", new Object[] { System.getProperty("java.version"), Integer.valueOf(this.mc.isJava64bit() ? 64 : 32) }),
+					HString.format("Mem: % 2d%% %03d/%03dMB", new Object[] { Long.valueOf(l * 100L / i), Long.valueOf(bytesToMb(l)), Long.valueOf(bytesToMb(i)) }),
+					HString.format("Allocated: % 2d%% %03dMB", new Object[] { Long.valueOf(j * 100L / i), Long.valueOf(bytesToMb(j)) }),
+					"CPU: webcraft", 
+					"Display: " + Display.getWidth() + "x" + Display.getHeight(),
+					"WebCraft OpenGL Graphics", 
+					"WebCraft Render Pipeline" 
+			});
 		} else {
-			arraylist = Lists.newArrayList(new String[] { "Platform: " + EagRuntime.getPlatformType().getName(),
-					"Java: TeaVM", "", HString.format("CPU: %s", new Object[] { "webcraft" }), "",
-					HString.format("Display: %dx%d (%s)",
-							new Object[] { Integer.valueOf(Display.getWidth()), Integer.valueOf(Display.getHeight()),
-									EaglercraftGPU.glGetString(7936) }),
-					EaglercraftGPU.glGetString(7937), EaglercraftGPU.glGetString(7938) });
+			arraylist = Lists.newArrayList(new String[] { 
+					"Platform: " + EagRuntime.getPlatformType().getName(),
+					"Java: TeaVM", 
+					"CPU: webcraft", 
+					"Display: " + Display.getWidth() + "x" + Display.getHeight(),
+					"WebCraft OpenGL Graphics", 
+					"WebCraft Render Pipeline" 
+			});
 		}
-		if (this.isReducedDebug()) {
+		if (this.mc.isReducedDebug()) {
 			return arraylist;
+		} else {
+			if (this.mc.objectMouseOver != null
+					&& this.mc.objectMouseOver.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK
+					&& this.mc.objectMouseOver.getBlockPos() != null) {
+				BlockPos blockpos = this.mc.objectMouseOver.getBlockPos();
+				IBlockState iblockstate = this.mc.theWorld.getBlockState(blockpos);
+				arraylist.add("");
+				arraylist.add(String.valueOf(Block.blockRegistry.getNameForObject(iblockstate.getBlock())));
+
+				for (Entry entry : iblockstate.getProperties().entrySet()) {
+					String s = ((Comparable) entry.getValue()).toString();
+					if (entry.getValue() == Boolean.TRUE) {
+						s = EnumChatFormatting.GREEN + s;
+					} else if (entry.getValue() == Boolean.FALSE) {
+						s = EnumChatFormatting.RED + s;
+					}
+					arraylist.add(((IProperty) entry.getKey()).getName() + ": " + s);
+				}
+			}
+			return arraylist;
+		}
+				}
+				
 		} else {
 			if (this.mc.objectMouseOver != null
 					&& this.mc.objectMouseOver.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK
