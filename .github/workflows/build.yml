@@ -33,6 +33,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
+      
+      - name: Copy src folder to deploy folder
+        run: cp -r src target_teavm_wasm_gc/javascript/
+
       - name: Deploy to Pages Branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
