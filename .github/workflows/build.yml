@@ -21,6 +21,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -37,7 +42,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
-      
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
