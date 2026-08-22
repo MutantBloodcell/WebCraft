@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-<meta name="description" content="EaglercraftX 1.8 Offline" />
-<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
+<meta name="description" content="WebCraft Offline" />
+<meta name="keywords" content="webcraft, webcraftx, minecraft, 1.8, 1.8.8" />
 <title>EaglercraftX 1.8</title>
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="EaglercraftX 1.8" />
-<meta property="og:description" content="Play minecraft 1.8 in your browser" />
+<meta property="og:title" content="WebCraft" />
+<meta property="og:description" content="Play Minecraft in your browser" />
 <script type="text/javascript">
 "use strict";
 var relayId = Math.floor(Math.random() * 3);
@@ -21,9 +21,9 @@ window.eaglercraftXOptsHints = {
 	container: "game_frame",
 	worldsDB: "worlds",
 	relays: [
-		{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
-		{ addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
-		{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
+		{ addr: "wss://relay.deev.is/", comment: "mutant relay #1", primary: relayId === 0 },
+		{ addr: "wss://relay.lax1dude.net/", comment: "mutant relay #2", primary: relayId === 1 },
+		{ addr: "wss://relay.shhnowisnottheti.me/", comment: "web relay #1", primary: relayId === 2 }
 	],
 	checkRelaysForUpdates: true
 };
