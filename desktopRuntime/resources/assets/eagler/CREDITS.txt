@@ -257,7 +257,7 @@
  
  Used For: A few, limited portions we "borrowed" without the author's permission
  
- Note: Eaglercraft is not OptiFine, we only use the code for connected textures
+ Note: WebCraft is not OptiFine, we only use the code for connected textures
        and maintaining compatibility with certain resource pack features
  
  * The mod OptiFine is Copyright © 2011-2021 by sp614x and the intellectual
