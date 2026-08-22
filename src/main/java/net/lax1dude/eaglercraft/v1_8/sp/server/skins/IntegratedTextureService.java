@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 lax1dude. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -101,7 +101,7 @@ public class IntegratedTextureService {
 
 	public void handleRequestSkinByURL(EntityPlayerMP requester, EaglercraftUUID uuid, String url) {
 		url = url.toLowerCase();
-		if (url.startsWith("eagler://")) {
+		if (url.startsWith("web://")) {
 			url = url.substring(9);
 			if (!url.contains(VFile2.pathSeperator)) {
 				CustomSkullData skull = skullHandler.loadSkullData(url);
@@ -117,7 +117,7 @@ public class IntegratedTextureService {
 
 	public void handleRequestSkinByURLV5(EntityPlayerMP requester, int requestId, String url) {
 		url = url.toLowerCase();
-		if (url.startsWith("eagler://")) {
+		if (url.startsWith("web://")) {
 			url = url.substring(9);
 			if (!url.contains(VFile2.pathSeperator)) {
 				CustomSkullData skull = skullHandler.loadSkullData(url);
@@ -138,7 +138,7 @@ public class IntegratedTextureService {
 			requester.addChatMessage(cc);
 			return;
 		}
-		String fileName = "eagler://" + skullHandler.installNewSkull(skullData);
+		String fileName = "web://" + skullHandler.installNewSkull(skullData);
 		NBTTagCompound rootTagCompound = new NBTTagCompound();
 		NBTTagCompound ownerTagCompound = new NBTTagCompound();
 		ownerTagCompound.setString("Name", "Web");
