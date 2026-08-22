@@ -6,12 +6,8 @@ on:
       - master
   workflow_dispatch:
 
-
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
+  contents: write
 
 concurrency:
   group: "pages"
@@ -20,11 +16,6 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
-    
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -42,17 +33,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Pages Branch
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: 'target_teavm_wasm_gc/javascript'
-
-      
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        
+          branch: pages
+          folder: target_teavm_wasm_gc/javascript
+          clean: true
+          
