@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022-2024 lax1dude, ayunami2000. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -60,7 +60,7 @@ public class RelayQueryRateLimitDummy implements RelayQuery {
 
 	@Override
 	public String getBrand() {
-		return "lax1dude";
+		return "Mutant Bloodcell";
 	}
 
 	@Override
