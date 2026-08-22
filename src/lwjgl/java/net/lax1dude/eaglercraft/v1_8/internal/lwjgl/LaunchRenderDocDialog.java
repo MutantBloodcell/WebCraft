@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 lax1dude. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -61,7 +61,7 @@ public class LaunchRenderDocDialog extends JDialog {
 				System.exit(0);
 			}
 		});
-		setTitle("EaglercraftX: " + ManagementFactory.getRuntimeMXBean().getName());
+		setTitle("WebCraft: " + ManagementFactory.getRuntimeMXBean().getName());
 		setResizable(false);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBackground(Color.WHITE);
