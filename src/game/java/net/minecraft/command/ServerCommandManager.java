@@ -24,12 +24,12 @@ import java.util.List;
 import net.lax1dude.eaglercraft.v1_8.sp.server.ClientCommandDummy;
 
 /**+
- * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
+ * This portion of WebCraftcontains deobfuscated Minecraft 1.8 source code.
  * 
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * WebCraft 1.8 patch files (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -91,7 +91,7 @@ public class ServerCommandManager extends CommandHandler implements IAdminComman
 		this.registerCommand(new CommandServerKick());
 		this.registerCommand(new CommandListPlayers());
 		this.registerCommand(new CommandSetPlayerTimeout());
-		this.registerCommand(new ClientCommandDummy("eagskull", 2, "command.skull.usage"));
+		this.registerCommand(new ClientCommandDummy("webskull", 2, "command.skull.usage"));
 		CommandBase.setAdminCommander(this);
 	}
 
