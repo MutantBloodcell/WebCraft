@@ -6,37 +6,49 @@ on:
       - master
   workflow_dispatch:
 
+
 permissions:
- contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
       
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: target_teavm_wasm_gc/javascript
-          branch: gh-pages
-          
+          path: 'target_teavm_wasm_gc/javascript'
+
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
