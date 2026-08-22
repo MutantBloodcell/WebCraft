@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 lax1dude. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -48,7 +48,7 @@ public class BootMenuDataManager {
 	public final List<EaglercraftUUID> launchOrderList = new ArrayList<>();
 
 	public int confBootTimeout = 0;
-	public String confMenuTitle = "EaglercraftX 1.8 Boot Manager";
+	public String confMenuTitle = "WebCraft 1.8 Boot Manager";
 
 	public BootMenuDataManager(BootMenuDatastore datastore) {
 		this.datastore = datastore;
