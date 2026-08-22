@@ -56,7 +56,7 @@ public class EagRuntime {
 	private static EnumPlatformANGLE angleBackend = null;
 	
 	public static String getVersion() {
-		return "EagRuntimeX 1.0";
+		return "WebRuntime 1.0";
 	}
 	
 	public static void create() {
