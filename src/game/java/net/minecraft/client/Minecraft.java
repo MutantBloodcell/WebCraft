@@ -202,12 +202,12 @@ import net.minecraft.world.storage.ISaveFormat;
 import net.optifine.Config;
 
 /**+
- * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
+ * This portion of WebCraft contains deobfuscated Minecraft 1.8 source code.
  * 
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * WebCraft 1.8 patch files (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -579,7 +579,7 @@ public class Minecraft implements IThreadListener {
 
 	private void createDisplay() {
 		Display.create();
-		Display.setTitle("Eaglercraft 1.8.8");
+		Display.setTitle("WebCraft 1.8.8");
 	}
 
 	private static boolean isJvm64bit() {
@@ -1701,27 +1701,27 @@ public class Minecraft implements IThreadListener {
 					String pluginBrand = this.thePlayer.sendQueue.getNetworkManager().getPluginBrand();
 					if (pluginBrand != null && ("EaglercraftXBungee".equals(pluginBrand)
 							|| "EaglercraftXVelocity".equals(pluginBrand))) {
-						String pfx = EnumChatFormatting.GOLD + "[EagX]" + EnumChatFormatting.AQUA;
+						String pfx = EnumChatFormatting.GOLD + "[WebX]" + EnumChatFormatting.AQUA;
 						ingameGUI.getChatGUI().printChatMessage(
 								new ChatComponentText(pfx + " ---------------------------------------"));
 						ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(pfx + " This server is running "
 								+ EnumChatFormatting.YELLOW + pluginBrand + EnumChatFormatting.AQUA + ","));
 						ingameGUI.getChatGUI().printChatMessage(
-								new ChatComponentText(pfx + " which has been discontinued by lax1dude."));
+								new ChatComponentText(pfx + " which has been continued by Mutant Bloodcell."));
 						ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(pfx));
 						ingameGUI.getChatGUI().printChatMessage(
 								new ChatComponentText(pfx + " If you are the admin of this server, please"));
 						ingameGUI.getChatGUI().printChatMessage(
-								new ChatComponentText(pfx + " upgrade to EaglercraftXServer if you want to"));
+								new ChatComponentText(pfx + " upgrade to EaglerXServer if you want to"));
 						ingameGUI.getChatGUI().printChatMessage(
 								new ChatComponentText(pfx + " to continue to receive support and bugfixes."));
 						ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(pfx));
 						ingameGUI.getChatGUI()
 								.printChatMessage((new ChatComponentText(pfx + " " + EnumChatFormatting.GREEN
-										+ EnumChatFormatting.UNDERLINE + "https://lax1dude.net/eaglerxserver"))
+										+ EnumChatFormatting.UNDERLINE + "https://github.com/MutantBloodcell/eaglerxserver"))
 												.setChatStyle((new ChatStyle())
 														.setChatClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL,
-																"https://lax1dude.net/eaglerxserver"))));
+																"https://github.com/MutantBloodcell/eaglerxserver"))));
 						ingameGUI.getChatGUI().printChatMessage(
 								new ChatComponentText(pfx + " ---------------------------------------"));
 					}
@@ -2132,7 +2132,7 @@ public class Minecraft implements IThreadListener {
 						+ EaglercraftGPU.glGetString(7936);
 			}
 		});
-		theCrash.getCategory().addCrashSectionCallable("Is Eagler Shaders", new Callable<String>() {
+		theCrash.getCategory().addCrashSectionCallable("Is Web Shaders", new Callable<String>() {
 			public String call() throws Exception {
 				return Minecraft.this.gameSettings.shaders ? "Yes" : "No";
 			}
