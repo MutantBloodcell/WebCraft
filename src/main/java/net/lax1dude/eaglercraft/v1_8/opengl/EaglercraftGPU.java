@@ -171,7 +171,7 @@ public class EaglercraftGPU {
 
 	public static void glNewList(int target, int op) {
 		if(currentList != null) {
-			throw new IllegalStateException("A display list is already being compiled you eagler!");
+			throw new IllegalStateException("A display list is already being compiled you web!");
 		}
 		if(op != GL_COMPILE) {
 			throw new UnsupportedOperationException("Only GL_COMPILE is supported by glNewList");
