@@ -174,7 +174,7 @@ public class GuiShareToLan extends GuiScreen {
 				62, 16777215);
 		this.drawCenteredString(this.fontRendererObj, I18n.format("lanServer.otherPlayers"),
 				this.width / 2, 112, 16777215);
-		this.drawCenteredString(this.fontRendererObj, "Anyone on WebCraft can access your code after joining your world",
+		this.drawCenteredString(this.fontRendererObj, "Anyone on WebCraft can access the code after joining your world",
 				this.width / 2, 195, 16777215);
 		super.drawScreen(par1, par2, par3);
 		this.relaysButton.drawScreen(par1, par2);
