@@ -530,7 +530,7 @@ public class RenderGlobal implements IWorldAccess, IResourceManagerReloadListene
 					EaglerDeferredPipeline.isSuspended = true;
 				}
 				if (flag && !EaglerDeferredPipeline.isSuspended) {
-					ChatComponentText shaderF4Msg = new ChatComponentText("[EaglercraftX] ");
+					ChatComponentText shaderF4Msg = new ChatComponentText("[WebCraft] ");
 					shaderF4Msg.getChatStyle().setColor(EnumChatFormatting.GOLD);
 					ChatComponentTranslation shaderF4Msg2 = new ChatComponentTranslation("shaders.debugMenuTip",
 							Keyboard.getKeyName(mc.gameSettings.keyBindFunction.getKeyCode()));
