@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022-2023 lax1dude, ayunami2000. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -160,7 +160,7 @@ public class PlatformApplication {
 		JOptionPane pane = new JOptionPane(msg, JOptionPane.WARNING_MESSAGE, JOptionPane.DEFAULT_OPTION, null,
 				new Object[] { "OK" }, "OK");
 		pane.setInitialValue("OK");
-		JDialog dialog = pane.createDialog("EaglercraftX Runtime");
+		JDialog dialog = pane.createDialog("WebCraft Runtime");
 		pane.selectInitialValue();
 		dialog.setIconImage(Toolkit.getDefaultToolkit().getImage("icon32.png"));
 		dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
