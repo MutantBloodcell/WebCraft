@@ -416,7 +416,7 @@ public class Minecraft implements IThreadListener {
 			this.displayHeight = this.gameSettings.overrideHeight;
 		}
 
-		logger.info("EagRuntime Version: " + EagRuntime.getVersion());
+		logger.info("WebRuntime Version: " + EagRuntime.getVersion());
 		this.createDisplay();
 		this.registerMetadataSerializers();
 		EaglerFolderResourcePack.deleteOldResourcePacks(EaglerFolderResourcePack.SERVER_RESOURCE_PACKS, 604800000L);
