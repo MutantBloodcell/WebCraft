@@ -10,7 +10,7 @@ public class EaglercraftVersion {
 	/// Customize these to fit your fork:
 	
 	public static final String projectForkName = "WebCraft";
-	public static final String projectForkVersion = "u53";
+	public static final String projectForkVersion = "b01";
 	public static final String projectForkVendor = "MutantBloodcell";
 	
 	public static final String projectForkURL = "https://gitlab.com/MutantBloodcell/WebCraft";
@@ -20,7 +20,7 @@ public class EaglercraftVersion {
 	public static final String projectOriginName = "WebCraft";
 	public static final String projectOriginAuthor = "MutantBloodcell";
 	public static final String projectOriginRevision = "1.8";
-	public static final String projectOriginVersion = "u53";
+	public static final String projectOriginVersion = "b01";
 	
 	public static final String projectOriginURL = "https://gitlab.com/MutantBloodcell/WebCraft"; // rest in peace
 	
