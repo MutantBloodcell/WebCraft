@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 lax1dude. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -110,7 +110,7 @@ var resetSettings = null;
 var handleVisibilityChange = null;
 
 const runtimeOpts = {
-	localStorageNamespace: "_eaglercraftX",
+	localStorageNamespace: "_webcraftX",
 	openDebugConsoleOnLaunch: false,
 	fixDebugConsoleUnloadListener: false,
 	forceWebViewSupport: false,
@@ -153,7 +153,7 @@ async function initializeContext() {
 		window.__isEaglerX188UnloadListenerSet = "yes";
 	}
 	
-	eagInfo("Initializing EagRuntime JS context...");
+	eagInfo("Initializing WebRuntime JS context...");
 	
 	await initializePlatfRuntime();
 	initializePlatfApplication(eagruntimeImpl.platformApplication);
@@ -439,7 +439,7 @@ async function initializeContextWorker() {
 		});
 	};
 	
-	eagInfo("Initializing EagRuntime worker JS context...");
+	eagInfo("Initializing WebRuntime worker JS context...");
 	
 	await initializePlatfRuntime();
 	initializeNoPlatfApplication(eagruntimeImpl.platformApplication);
@@ -453,7 +453,7 @@ async function initializeContextWorker() {
 	initializeNoClientPlatfSP(eagruntimeImpl.clientPlatformSingleplayer);
 	initializeServerPlatfSP(eagruntimeImpl.serverPlatformSingleplayer);
 	
-	eagInfo("EagRuntime worker JS context initialization complete");
+	eagInfo("WebRuntime worker JS context initialization complete");
 }
 
 /**
