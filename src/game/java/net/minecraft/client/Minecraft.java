@@ -322,7 +322,7 @@ public class Minecraft implements IThreadListener {
 	public int bungeeOutdatedMsgTimer = 0;
 	private boolean isLANOpen = false;
 
-	public SkullCommand eagskullCommand;
+	public SkullCommand webskullCommand;
 
 	public GuiVoiceOverlay voiceOverlay;
 	public ServerNotificationRenderer notifRenderer;
