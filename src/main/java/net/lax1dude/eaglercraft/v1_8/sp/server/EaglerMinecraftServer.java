@@ -68,7 +68,7 @@ public class EaglerMinecraftServer extends MinecraftServer {
 		this.saveHandler = new EaglerSaveHandler(savesDir, world);
 		EaglerPlayerList playerList = new EaglerPlayerList(this, viewDistance);
 		this.textureService = new IntegratedTextureService(playerList,
-				WorldsDB.newVFile(saveHandler.getWorldDirectory(), "eagler/skulls"));
+				WorldsDB.newVFile(saveHandler.getWorldDirectory(), "web/skulls"));
 		this.voiceService = null;
 		this.setServerOwner(owner);
 		logger.info("server owner: " + owner);
