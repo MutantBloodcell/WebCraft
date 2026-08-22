@@ -24,7 +24,7 @@ import java.util.List;
 import net.lax1dude.eaglercraft.v1_8.sp.server.ClientCommandDummy;
 
 /**+
- * This portion of WebCraftcontains deobfuscated Minecraft 1.8 source code.
+ * This portion of WebCraft contains deobfuscated Minecraft 1.8 source code.
  * 
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
