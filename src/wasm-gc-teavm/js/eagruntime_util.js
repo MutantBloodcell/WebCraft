@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 lax1dude. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -70,7 +70,7 @@ function logImpl(lvl, msg, args) {
 	if(lvl < currentLogLevel) {
 		return;
 	}
-	msg = "EagRuntimeJS: [" + (new Date()).toLocaleTimeString() + "][" + contextName +"/" + (levels[lvl] || "UNKNOWN") + "] " + formatArgs(msg, args);
+	msg = "WebRuntimeJS: [" + (new Date()).toLocaleTimeString() + "][" + contextName +"/" + (levels[lvl] || "UNKNOWN") + "] " + formatArgs(msg, args);
 	if(lvl >= ERROR) {
 		console.error(msg);
 	}else {
