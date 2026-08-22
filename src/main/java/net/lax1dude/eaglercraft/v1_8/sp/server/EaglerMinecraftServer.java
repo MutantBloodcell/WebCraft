@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * Copyright (c) 2026 Mutant Bloodcell. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -117,7 +117,7 @@ public class EaglerMinecraftServer extends MinecraftServer {
 
 	@Override
 	protected boolean startServer() throws IOException {
-		logger.info("Starting integrated eaglercraft server version 1.8.8");
+		logger.info("Starting integrated WebCraft server version 1.8.8");
 		this.loadAllWorlds(saveHandler, this.getWorldName(), newWorldSettings);
 		serverRunning = true;
 		return true;
