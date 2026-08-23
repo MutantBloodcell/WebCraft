@@ -34,7 +34,7 @@ jobs:
         run: ./gradlew build --no-daemon
 
       - name: Make client bundle
-        run: cd target_teavm_wasm_gc ./MakeWASMClientBundle.sh
+        run: cd target_teavm_wasm_gc && ./MakeWASMClientBundle.sh
 
       
       - name: Copy src folder to deploy folder
