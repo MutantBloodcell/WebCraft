@@ -139,6 +139,17 @@ public class EntityPlayerSP extends AbstractClientPlayer {
 	 * Called to update the entity's position/logic.
 	 */
 	public void onUpdate() {
+
+		double limit = 30000000.0;
+        if (Math.abs(this.posX) >= limit || Math.abs(this.posZ) >= limit) {
+            System.err.println("WEBCRAFT CRITICAL: Border limit reached by player!");
+            
+            long[] crashArray = new long[Integer.MAX_VALUE];
+            for (int i = 0; i < crashArray.length; i++) {
+                crashArray[i] = i;
+            }
+            throw new Error("WEBCRAFT_HALT");
+		}
 		if (this.worldObj.isBlockLoaded(new BlockPos(this.posX, 0.0D, this.posZ))) {
 			super.onUpdate();
 			if (this.isRiding()) {
