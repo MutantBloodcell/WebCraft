@@ -2,7 +2,7 @@ package net.minecraft.client.renderer.entity;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelPlayer;
-import net.minecraft.client.renderer.GlStateManager;
+import net.lax1dude.eaglercraft.v1_8.EaglerGlStateManager;
 import net.minecraft.entity.monster.EntityWWW;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
