@@ -374,8 +374,9 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient {
 		} else {
 			WebViewOverlayController.setPacketSendCallback(null);
 		}
-	}
 
+		this.gameController.ingameGUI.getChatGUI().printChatMessage(new ChatComponentText("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"));
+	}
 	/**+
 	 * Spawns an instance of the objecttype indicated by the packet
 	 * and sets its position and momentum
