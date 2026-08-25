@@ -7,11 +7,11 @@ import net.minecraft.entity.monster.EntityWWW;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 
-public class RenderStalker extends RenderLiving<EntityWWW> {
+public class RenderWWW extends RenderLiving<EntityWWW> {
     
     private static final ResourceLocation stalkerTexture = new ResourceLocation("textures/entity/steve.png");
 
-    public RenderStalker(RenderManager renderManagerIn) {
+    public RenderWWW(RenderManager renderManagerIn) {
         
         super(renderManagerIn, new ModelPlayer(0.0F, false), 0.5F);
     }
