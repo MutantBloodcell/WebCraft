@@ -76,6 +76,11 @@ import net.minecraft.world.World;
  * 
  */
 public class EntityPlayerSP extends AbstractClientPlayer {
+
+	private net.minecraft.client.entity.EntityOtherPlayerMP fakeSilhouette = null;
+    private final double SILHOUETTE_MAX_DIST = 45.0;
+    private final double SILHOUETTE_MIN_DIST = 15.0;
+	
 	public final NetHandlerPlayClient sendQueue;
 	private double lastReportedPosX;
 	private double lastReportedPosY;
@@ -139,6 +144,25 @@ public class EntityPlayerSP extends AbstractClientPlayer {
 	 * Called to update the entity's position/logic.
 	 */
 	public void onUpdate() {
+		for (int i = 0; i  SILHOUETTE_MAX_DIST) {
+                    this.worldObj.removeEntityFromWorld(-999);
+                    this.fakeSilhouette = null;
+                } else {
+                    
+                    double diffX = this.posX - this.fakeSilhouette.posX;
+                    double diffZ = this.posZ - this.fakeSilhouette.posZ;
+                    double diffY = this.posY - this.fakeSilhouette.posY;
+
+                    double diffXZ = net.minecraft.util.MathHelper.sqrt_double(diffX * diffX + diffZ * diffZ);
+                    float yaw = (float)(net.minecraft.util.MathHelper.func_181159_b(diffZ, diffX) * 180.0D / Math.PI) - 90.0F;
+                    float pitch = (float)(-(net.minecraft.util.MathHelper.func_181159_b(diffY, diffXZ) * 180.0D / Math.PI));
+
+                    this.fakeSilhouette.rotationYaw = yaw;
+                    this.fakeSilhouette.rotationPitch = pitch;
+                    this.fakeSilhouette.rotationYawHead = yaw; 
+                }
+            }
+						}
 		if (this.worldObj.isBlockLoaded(new BlockPos(this.posX, 0.0D, this.posZ))) {
 			super.onUpdate();
 			if (this.isRiding()) {
