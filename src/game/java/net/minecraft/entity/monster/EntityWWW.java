@@ -5,9 +5,9 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
-public class EntityStalker extends EntityLiving {
+public class EntityWWW extends EntityLiving {
 
-    public EntityStalker(World worldIn) {
+    public EntityWWW(World worldIn) {
         super(worldIn);
         
         this.setSize(0.6F, 1.8F);
